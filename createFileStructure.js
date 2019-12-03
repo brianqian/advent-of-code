@@ -27,9 +27,9 @@ const createFileTree = async (year, startDay) => {
   console.log(content);
   for (let i = startDay - 1; i < NUM_OF_DAYS; i++) {
     createDirectory(`/${year}/day${i + 1}`);
-    createFile(`${process.cwd()}/${year}/day${i + 3}/input.txt`);
-    createFile(`${process.cwd()}/${year}/day${i + 3}/index.js`, content);
+    createFile(`${process.cwd()}/${year}/day${i + 1}/input.txt`);
+    createFile(`${process.cwd()}/${year}/day${i + 1}/index.js`, content);
   }
 };
 
-createFileTree(2018, 3);
+createFileTree(2019, 2);
